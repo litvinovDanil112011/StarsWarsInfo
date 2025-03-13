@@ -16,7 +16,7 @@ class ManagerConfigureViews {
     public func configureLabel(title: String) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .white
+        label.textColor = Constants.colorTestStarWars
         label.textAlignment = .center
         label.text = title
         label.numberOfLines = 3
@@ -30,7 +30,7 @@ class ManagerConfigureViews {
         button.setTitle(title, for: .normal)
         button.setTitleColor(colorBackground, for: .normal)
         button.layer.cornerRadius = 10
-        button.backgroundColor = .white
+        button.backgroundColor = Constants.colorTestStarWars
         return button
     }
     
