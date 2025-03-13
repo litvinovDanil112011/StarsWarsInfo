@@ -8,17 +8,19 @@
 import UIKit
 
 final class OnbordingViewController: UIViewController {
+    let networkManager = NetworkManager()
     //MARK: Var
     let backroundImage = UIImageView(image: UIImage(named: "skyScreenSaven"))
     let labelStarWars = ManagerConfigureViews.shared.configureLabel(title: "Stars Wars Info")
-    let pushMainScreen = ManagerConfigureViews.shared.configureButton(title: "Start", colorBackground: .blue)
+    let pushMainScreen = ManagerConfigureViews.shared.configureButton(title: "Start", colorBackground: .black)
     //MARK: - Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHerarcy()
         setupViews()
         setupLayuot()
-    }    
+        networkManager.getSWInfo()
+    }
     //MARK: - Setups
     private func setupHerarcy() {
         view.addSubview(backroundImage)
