@@ -30,6 +30,7 @@ final class MainViewConroller: UIViewController {
     
     private func setupViews() {
         title = "Choice"
+        choiceTable.reloadData()
     }
     
     private func setupLayuot() {
@@ -54,14 +55,14 @@ final class MainViewConroller: UIViewController {
 extension MainViewConroller: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        DataSWListURL.shares.arrayURLs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = choiceTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Test Star Wats"
+        cell.textLabel?.text = "ataSWListURL.shares.arrayURLs.first!"
         cell.backgroundColor = .clear
         return cell
     }
 }
-#warning("Создать модель таблице и проверить переходы")
+
