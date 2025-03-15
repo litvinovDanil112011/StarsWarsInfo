@@ -10,7 +10,7 @@ import UIKit
 //struct ModelSW: Decodable {
 //    let people: SWURLResponse
 //}
-//
+
 //struct SWURLResponse: Decodable {
 //    let people: String
 //    let planets: String
