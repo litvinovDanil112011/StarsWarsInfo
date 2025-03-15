@@ -34,6 +34,7 @@ final class OnbordingViewController: UIViewController {
     
     @objc func jumpToMainScreen() {
         navigationController?.pushViewController(MainViewConroller(), animated: true)
+        print("\(DataSWListURL.shares.arrayURLs.description)")
     }
 
 }

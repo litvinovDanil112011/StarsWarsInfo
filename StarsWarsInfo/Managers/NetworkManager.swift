@@ -25,6 +25,8 @@ class NetworkManager {
             guard let data = data else { return }
             print("\(String(describing: String(data: data, encoding: .utf8)))")
             
+            DataSWListURL.shares.arrayURLs.append(String(describing: String(data: data, encoding: .utf8)))
+            
         }.resume()
     }
     
