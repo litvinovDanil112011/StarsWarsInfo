@@ -12,9 +12,9 @@ class DataSWListURL {
     
     var arrayURLs = [String]()
     
-//    public func getValue() -> [String] {
-//        
-//        return [String]1
-//    }
+    public func getValue() -> [String] {
+        let array = [String]()
+        return array
+    }
 #warning("Создать модель таблице и проверить переходы")
 }
