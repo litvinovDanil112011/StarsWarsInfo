@@ -14,7 +14,7 @@ class DataSWListURL {
     
 //    public func getValue() -> [String] {
 //        
-//        return [String]
+//        return [String]1
 //    }
 #warning("Создать модель таблице и проверить переходы")
 }
