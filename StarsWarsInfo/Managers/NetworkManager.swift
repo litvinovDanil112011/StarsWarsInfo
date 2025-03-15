@@ -8,14 +8,11 @@
 import Foundation
 
 class NetworkManager {
-    
+    static let shared = NetworkManager()
     let url = "https://swapi.dev/api/"
     
     func getSWInfo() {
-        var components = URLComponents(string: url)
-//        components?.scheme = "https"
-//        components?.host = "swapi.dev"
-//        
+        let components = URLComponents(string: url)
         guard let url = components?.url else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -26,9 +23,9 @@ class NetworkManager {
                 print("URL NO _______________")
             }
             guard let data = data else { return }
+            print("\(String(describing: String(data: data, encoding: .utf8)))")
             
         }.resume()
-        
     }
     
 }

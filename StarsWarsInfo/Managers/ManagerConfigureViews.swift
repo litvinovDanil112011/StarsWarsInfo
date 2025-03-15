@@ -34,4 +34,10 @@ class ManagerConfigureViews {
         return button
     }
     
+    public func configureTable() -> UITableView {
+        let tablr = UITableView(frame: .zero, style: .insetGrouped)
+        tablr.translatesAutoresizingMaskIntoConstraints = false
+        return tablr
+    }
+    
 }
